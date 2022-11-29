@@ -1,0 +1,33 @@
+<h1 style="padding: 30px">Registration</h1>
+
+  <div class="container">
+    <div class="col-3" style="text-align: center">
+      <%= form_with model: @user do |form|%>
+      <%= form.label("Input E-mail")%>
+      <br>
+      <%= form.email_field :email, class: "form-control form-control-dark text-bg-dark" %>
+      <br>
+      <%= form.label("Input Login")%>
+      <br>
+      <%= form.text_field :login, class: "form-control form-control-dark text-bg-dark"%>
+      <br>
+      <%= form.label("Input your first name")%>
+      <br>
+      <%= form.text_field :firstname, class: "form-control form-control-dark text-bg-dark"%>
+      <br>
+      <%= form.label("Input your last name")%>
+      <br>
+      <%= form.text_field :lastname, class: "form-control form-control-dark text-bg-dark"%>
+      <br>
+      <%= form.label("Input password")%>
+      <br>
+      <%= form.password_field :password, class: "form-control form-control-dark text-bg-dark"%>
+      <br>
+      <%= form.label("Input password confirmation")%>
+      <br>
+      <%= form.password_field :password_confirmation, class: "form-control form-control-dark text-bg-dark"%>
+      <br>
+      <%= form.submit "Sign Up", class: "btn btn-outline-dark me-2"%>
+      <% end %>
+    </div>
+  </div>

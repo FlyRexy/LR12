@@ -1,0 +1,15 @@
+<div class="p1">All users online:</div>
+<div class="col-6">
+  <table class="table table-dark">
+    <th>E-mail</th>
+    <th>Login</th>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.email %></td>
+        <td><%= user.login %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
+
+
