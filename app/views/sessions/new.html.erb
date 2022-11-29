@@ -1,0 +1,15 @@
+<h1 style="padding: 30px">Logging in</h1>
+
+<div class="col-3" style="padding-top: 30px">
+  <%= form_with url: session_path do |form| %>
+    <%= form.label("Input Login")%>
+    <br>
+    <%= form.text_field :login, class: "form-control form-control-dark text-bg-dark"%>
+    <br>
+    <%= form.label("Input password")%>
+    <br>
+    <%= form.password_field :password, class: "form-control form-control-dark text-bg-dark"%>
+    <br>
+    <%= form.submit "Sign In", class: "btn btn-outline-dark me-2"%>
+  <% end %>
+</div>
